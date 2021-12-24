@@ -44,7 +44,7 @@ module.exports = (ctx) => {
                 // 如果没有命令行传参，则用配置路径
                 if( newPath == '')
                 {
-                    newPath = userConfig.directory;
+                    newPath = userConfig.remotePath;
                 }
                 for (let i = 0; i < ctx.output.length; i++) {
                     let fileName = ctx.output[i].fileName;

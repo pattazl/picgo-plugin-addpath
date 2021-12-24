@@ -20,4 +20,20 @@ the addpath is the param which start with a colon
 
 将上传到原先路径 path+ addpath + test.jpeg 文件
 
-在传入的参数中增加 :开头的路径即可
+在入参数中，冒号开头的参数即表示此为额外添加的路径。
+
+注意: 如果配置
+
+```json
+"picgo-plugin-addpath": {
+    "remotePath": ""
+  }
+```
+
+当命令行不填写 路径参数时，将用 remotePath 的路径添加，默认remotePath 为空
+
+## picgo 界面客户端
+
+如果在配置 “远端添加路径”，则会在原先图库path的路径后添加新的路径
+
+比如原先远端路径是 /img/ ,添加路径为  myfile ，添加文件名为 myPic.png，则最终远端路径为 /img/myfile/myPic.png

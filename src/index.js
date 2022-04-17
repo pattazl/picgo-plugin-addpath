@@ -48,7 +48,10 @@ module.exports = (ctx) => {
                 }
                 for (let i = 0; i < ctx.output.length; i++) {
                     let fileName = ctx.output[i].fileName;
-                    ctx.output[i].fileName =  newPath + '/' + fileName;
+                    if(newPath!=null && newPath!='')
+                    {
+                        ctx.output[i].fileName =  newPath + '/' + fileName;
+                    }
                 }
             },
             config: pluginConfig

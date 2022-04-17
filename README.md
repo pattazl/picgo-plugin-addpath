@@ -13,6 +13,7 @@ a plugin for picgo , append additional path of upload file.
 the remote path is  ori-path+ addpath + test.jpeg
 
 the addpath is the param which start with a colon
+In typora, Preferences -> Image -> Image Upload Setting, select Custom Command , command = picgo u ":${filename}"
 
 ## 使用方法:
 
@@ -31,6 +32,7 @@ the addpath is the param which start with a colon
 ```
 
 当命令行不填写 路径参数时，将用 remotePath 的路径添加，默认remotePath 为空
+在typora 中，设置自定义模式，直接用 picgo u ":${filename}" 即可
 
 ## picgo 界面客户端
 
